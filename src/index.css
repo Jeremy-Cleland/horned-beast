@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap");
 * {
   box-sizing: border-box;
+  align-items: center;
 }
 
-html {
+#root {
+  margin: 0;
+  background-color: #171717;
+
   font-family: "Oxygen Mono", monospace;
 }
 
-body {
-  margin: 0;
-  background-color: #171717;
-  color: #e5e5e5;
+.card {
+  margin-top: 50px;
+  border: none;
 }
-
-/* font-family: "Oxygen", sans-serif; */
