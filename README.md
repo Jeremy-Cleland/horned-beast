@@ -38,13 +38,13 @@ Description: This Application displays images and information of horned animals.
 - When the images are displayed on the screen
 - Then each image should be rendered in a visually pleasing way: in columns, as screen width allows.
 
-**Estimate of time needed to complete:**
+**Estimate of time needed to complete:** 1 hour
 
-**Start time:**
+**Start time:** 4:30
 
-**Finish time:**
+**Finish time:** 5:25
 
-**Actual time needed to complete:**
+**Actual time needed to complete:** 55 minutes
 
 ### Feature 4 | Add Interaction
 
