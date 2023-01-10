@@ -1,71 +1,61 @@
-# Getting Started with Create React App
+# Horned Beast
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description: This Application displays images and information of horned animals.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Feature 1 | Display Images
 
-### `npm start`
+- Given that a user opens the application in the browser
+- When the user navigates to the home page
+- Then the photo gallery should display all of the beasts' images in the gallery.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Estimate of time needed to complete:** 10 minutes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Start time:** 1:00
 
-### `npm test`
+**Finish time:** 1:13
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Actual time needed to complete:** 13 minutes
 
-### `npm run build`
+### Feature 2 | Allow Users to Favorite Individual Beasts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Given that a user opens the application in the browser
+- When a user clicks on an image of a beast
+- Then the number of "Favorites" displayed on that beast will increase by one.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Estimate of time needed to complete:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Start time:**
 
-### `npm run eject`
+**Finish time:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Actual time needed to complete:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Feature 3| Bootstrap
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Given that a user opens the application in the browser
+- When the images are displayed on the screen
+- Then each image should be rendered in a visually pleasing way: in columns, as screen width allows.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Estimate of time needed to complete:**
 
-## Learn More
+**Start time:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Finish time:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Actual time needed to complete:**
 
-### Code Splitting
+### Feature 1 | Add Interaction
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Given that a user opens the application in the browser
+- When a user clicks on an item other than the horned beasts, such as the title of the page or the footer,
+- Then the information and styles should change.
 
-### Analyzing the Bundle Size
+**Estimate of time needed to complete:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Start time:**
 
-### Making a Progressive Web App
+**Finish time:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# horned-beast
+**Actual time needed to complete:**

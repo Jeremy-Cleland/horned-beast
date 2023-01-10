@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap");
+
 header {
+  font-family: "Oxygen Mono", monospace;
+  letter-spacing: 10px;
   box-sizing: border-box;
   width: 100%;
   display: flex;
