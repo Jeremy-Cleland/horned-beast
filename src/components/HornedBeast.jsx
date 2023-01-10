@@ -5,9 +5,16 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <div>
-        <h2>{this.props.title}</h2>
-        <img src='' title='' alt='' />
-        <p>Description: {this.props.description}</p>
+        <h2 className='horned-best__title'>{this.props.title}</h2>
+        <img
+          className='horned-best__img'
+          src={this.props.image_url}
+          title=''
+          alt=''
+        />
+        <p className='horned-best__description'>
+          Description: {this.props.description}
+        </p>
       </div>
     );
   }
