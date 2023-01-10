@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap");
 * {
   box-sizing: border-box;
+  align-items: center;
 }
 
 html {
@@ -13,4 +14,4 @@ body {
   color: #e5e5e5;
 }
 
-font-family: "Oxygen", sans-serif;
+/* font-family: "Oxygen", sans-serif; */
