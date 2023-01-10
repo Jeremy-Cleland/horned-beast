@@ -9,8 +9,8 @@ class HornedBeast extends React.Component {
         <img
           className='horned-best__img'
           src={this.props.image_url}
-          title=''
-          alt=''
+          title={this.props.title}
+          alt={this.props.alt}
         />
         <p className='horned-best__description'>
           Description: {this.props.description}
