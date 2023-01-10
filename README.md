@@ -24,13 +24,13 @@ Description: This Application displays images and information of horned animals.
 - When a user clicks on an image of a beast
 - Then the number of "Favorites" displayed on that beast will increase by one.
 
-**Estimate of time needed to complete:**
+**Estimate of time needed to complete:** 20 minutes
 
-**Start time:**
+**Start time:** 2:20
 
-**Finish time:**
+**Finish time:** 2:50
 
-**Actual time needed to complete:**
+**Actual time needed to complete:** 30 minutes
 
 ### Feature 3| Bootstrap
 
@@ -46,7 +46,7 @@ Description: This Application displays images and information of horned animals.
 
 **Actual time needed to complete:**
 
-### Feature 1 | Add Interaction
+### Feature 4 | Add Interaction
 
 - Given that a user opens the application in the browser
 - When a user clicks on an item other than the horned beasts, such as the title of the page or the footer,
