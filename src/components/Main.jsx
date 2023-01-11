@@ -1,21 +1,21 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
 import "../styles/Main.css";
-import { hornedBeastData } from "../data";
 import Card from "react-bootstrap/Card";
 
 class Main extends React.Component {
   render() {
     return (
       <Card>
-        {hornedBeastData.map((el) => {
+        {this.props.hornedBeastData.map((el) => {
           return (
             <HornedBeast
               title={el.title}
               image_url={el.image_url}
-              alt={el.alt}
-              description={el.description}
+              keyword={el.keyword}
+              alt={el.description}
               horns={el.horns}
+              handleOpenModal={this.props.handleOpenModal}
             />
           );
         })}

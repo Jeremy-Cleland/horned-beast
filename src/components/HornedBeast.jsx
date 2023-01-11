@@ -1,9 +1,6 @@
 import React from "react";
 import "../styles/HornedBeast.css";
-import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Card, Container, Row, Col } from "react-bootstrap/";
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -19,19 +16,29 @@ class HornedBeast extends React.Component {
     });
   };
 
+  handleNameClick = () => {
+    this.props.handleOpenModal(
+      this.props.title,
+      this.props.image_url,
+      this.props.description
+    );
+  };
+
   render() {
     return (
-      <Container fluid='xxl'>
+      <Container>
         <Row>
           <Col>
             <Card className='bg-dark text-white'>
-              <Card.Header as='h2'>{this.props.title}</Card.Header>
+              <Card.Header onClick={this.handleNameClick} as='h2'>
+                {this.props.title}
+              </Card.Header>
               <Card.Img
-                onClick={this.handleClick}
                 className='text-dark'
+                onClick={this.handleClick}
                 src={this.props.image_url}
                 title={this.props.title}
-                alt={this.props.alt}
+                alt={this.props.description}
               />
               <Card.Body className='text-white'>
                 <p>Description: {this.props.description}</p>
