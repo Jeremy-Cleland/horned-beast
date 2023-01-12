@@ -15,7 +15,18 @@
 .card-header {
   border: none;
 }
+.card-footer {
+  border: none;
+}
 
 .text-white {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+button {
+  border: #fff 1px solid;
+  border-radius: 5px;
+  color: #fff;
+  background: #171717;
 }

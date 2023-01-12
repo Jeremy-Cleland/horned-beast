@@ -20,7 +20,8 @@ class HornedBeast extends React.Component {
     this.props.handleOpenModal(
       this.props.title,
       this.props.image,
-      this.props.description
+      this.props.description,
+      this.props.horns
     );
   };
 
@@ -29,22 +30,25 @@ class HornedBeast extends React.Component {
       <Container>
         <Row>
           <Col>
-            <Card className='bg-dark text-white'>
-              <Card.Header onClick={this.handleNameClick} as='h2'>
+            <Card className="bg-dark text-white">
+              <Card.Header onClick={this.handleNameClick} as="h2">
                 {this.props.title}
               </Card.Header>
               <Card.Img
-                className='text-dark'
-                onClick={this.handleClick}
+                className="text-dark"
                 src={this.props.image}
                 title={this.props.title}
                 alt={this.props.description}
+                onClick={this.handleNameClick}
               />
-              <Card.Body className='text-white'>
+              <Card.Body className="text-white">
                 <p>Description: {this.props.description}</p>
                 <p>Horns: {this.props.horns}</p>
               </Card.Body>
-              <div className='text-white'>{this.state.likes} ♥️</div>
+              <Card.Footer>
+                <div className="text-white">{this.state.likes} ♥️</div>
+                <button onClick={this.handleClick}>Like Me!</button>
+              </Card.Footer>
             </Card>
           </Col>
         </Row>

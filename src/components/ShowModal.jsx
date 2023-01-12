@@ -11,21 +11,25 @@ class ShowModal extends React.Component {
   render() {
     return (
       <Modal
-        className='bg-dark text-white'
+        className="bg-dark text-white"
         show={this.props.showModal}
         onHide={this.props.handleCloseModal}
       >
         <Modal.Header>
-          <Modal.Title id='contained-modal-title-vcenter'>
+          <Modal.Title id="contained-modal-title-vcenter">
             {this.props.selectedBeast.title}
           </Modal.Title>
         </Modal.Header>
         <img
-          className='modal-image'
+          className="modal-image"
           src={this.props.selectedBeast.image}
           alt={this.props.selectedBeast.description}
           title={this.props.selectedBeast.title}
         />
+        <Modal.Body>
+          <p>Description: {this.props.selectedBeast.description}</p>
+          <p>Horns: {this.props.selectedBeast.horns}</p>
+        </Modal.Body>
         <Modal.Footer>
           <Button onClick={this.props.handleCloseModal}>Close</Button>
         </Modal.Footer>
