@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
+import { Navbar, Container } from "react-bootstrap";
 import "../styles/Header.css";
 
 class Header extends React.Component {

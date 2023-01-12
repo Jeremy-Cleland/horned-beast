@@ -52,10 +52,10 @@ Description: This Application displays images and information of horned animals.
 - When a user clicks on an item other than the horned beasts, such as the title of the page or the footer,
 - Then the information and styles should change.
 
-**Estimate of time needed to complete:**
+**Estimate of time needed to complete:** 2 hours
 
-**Start time:**
+**Start time:** 4:00
 
-**Finish time:**
+**Finish time:** 7:25
 
-**Actual time needed to complete:**
+**Actual time needed to complete:** Around an hour, but I had taken breaks to dig into depth and take notes. I have been buidling a comprehensive notebook for React
