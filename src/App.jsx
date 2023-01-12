@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import ShowModal from "./components/ShowModal";
+import Filter from "./components/Filter";
 
 class App extends React.Component {
   constructor(props) {
@@ -12,6 +13,8 @@ class App extends React.Component {
     this.state = {
       showModal: false,
       selectedBeast: "",
+      data: hornedBeastData,
+      sortedData: hornedBeastData,
     };
   }
 
@@ -33,13 +36,28 @@ class App extends React.Component {
     });
   };
 
+  handleSelect = (event) => {
+    if (event.target.value === "default") {
+      this.setState({
+        sortedData: this.state.data,
+      });
+    } else {
+      this.setState({
+        sortedData: this.state.data.filter(
+          (obj) => obj.horns === +event.target.value
+        ),
+      });
+    }
+  };
+
   render() {
     return (
       <>
         <Header />
+        <Filter data={hornedBeastData} handleSelect={this.handleSelect} />
         <Main
           handleOpenModal={this.handleOpenModal}
-          hornedBeastData={hornedBeastData}
+          data={this.state.sortedData}
         />
         <ShowModal
           showModal={this.state.showModal}

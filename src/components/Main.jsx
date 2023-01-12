@@ -7,7 +7,7 @@ class Main extends React.Component {
   render() {
     return (
       <Card>
-        {this.props.hornedBeastData.map((el) => {
+        {this.props.data.map((el) => {
           return (
             <HornedBeast
               title={el.title}
