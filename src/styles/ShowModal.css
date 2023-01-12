@@ -1,0 +1,19 @@
+.modal-content {
+  background-color: #171717;
+}
+
+.modal-image {
+  width: 450px;
+  background-color: #171717;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title h4 {
+  text-decoration: none;
+}
+.modal-footer {
+  border-top: none;
+}

@@ -19,7 +19,7 @@ class HornedBeast extends React.Component {
   handleNameClick = () => {
     this.props.handleOpenModal(
       this.props.title,
-      this.props.image_url,
+      this.props.image,
       this.props.description
     );
   };
@@ -36,7 +36,7 @@ class HornedBeast extends React.Component {
               <Card.Img
                 className='text-dark'
                 onClick={this.handleClick}
-                src={this.props.image_url}
+                src={this.props.image}
                 title={this.props.title}
                 alt={this.props.description}
               />

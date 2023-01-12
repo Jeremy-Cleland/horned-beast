@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import "../styles/ShowModal.css";
 
 class ShowModal extends React.Component {
   constructor(props) {
@@ -9,16 +10,22 @@ class ShowModal extends React.Component {
   }
   render() {
     return (
-      <Modal show={this.props.showModal} onHide={this.props.handleCloseModal}>
-        <Modal.Body>
-          <h2>{this.props.selectedBeastTitle}</h2>
-          <img
-            src={this.props.selectedBeastImage_Url}
-            alt={this.props.selectedBeastDescription}
-            title={this.props.selectedBeastTitle}
-          ></img>
-          <p>{this.props.selectedBeastDescription}</p>
-        </Modal.Body>
+      <Modal
+        className='bg-dark text-white'
+        show={this.props.showModal}
+        onHide={this.props.handleCloseModal}
+      >
+        <Modal.Header>
+          <Modal.Title id='contained-modal-title-vcenter'>
+            {this.props.selectedBeast.title}
+          </Modal.Title>
+        </Modal.Header>
+        <img
+          className='modal-image'
+          src={this.props.selectedBeast.image}
+          alt={this.props.selectedBeast.description}
+          title={this.props.selectedBeast.title}
+        />
         <Modal.Footer>
           <Button onClick={this.props.handleCloseModal}>Close</Button>
         </Modal.Footer>

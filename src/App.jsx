@@ -11,19 +11,18 @@ class App extends React.Component {
     super(props);
     this.state = {
       showModal: false,
-      selectedBeastTitle: "Title",
-      selectedBeastDescription: "Description ",
-      selectedBeastImage_Url:
-        "https://www.dhresource.com/0x0s/f2-albu-g5-M00-1A-11-rBVaI1hsIIiALxKzAAIHjSU3VkE490.jpg/wholesale-halloween-costume-prop-unicorn.jpg",
+      selectedBeast: "",
     };
   }
 
-  handleOpenModal = (title, description, image_url) => {
+  handleOpenModal = (title, image, description) => {
     this.setState({
       showModal: true,
-      selectedBeastTitle: title,
-      selectedBeastDescription: description,
-      selectedBeastImage_Url: image_url,
+      selectedBeast: {
+        title: title,
+        image: image,
+        description: description,
+      },
     });
   };
 
@@ -44,10 +43,8 @@ class App extends React.Component {
         <ShowModal
           showModal={this.state.showModal}
           handleCloseModal={this.handleCloseModal}
-          selectedBeastTitle={this.state.selectedBeastTitle}
-          selectedBeastDescription={this.state.selectedBeastDescription}
-          selectedBeastImage_Url={this.state.selectedBeastImage_Url}
-        ></ShowModal>
+          selectedBeast={this.state.selectedBeast}
+        />
         <Footer />
       </>
     );
