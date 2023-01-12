@@ -15,6 +15,7 @@ class Main extends React.Component {
               keyword={el.keyword}
               key={el.id}
               alt={el.description}
+              description={el.description}
               horns={el.horns}
               handleOpenModal={this.props.handleOpenModal}
             />
