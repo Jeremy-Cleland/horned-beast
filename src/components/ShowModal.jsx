@@ -26,8 +26,11 @@ class ShowModal extends React.Component {
           alt={this.props.selectedBeast.description}
           title={this.props.selectedBeast.title}
         />
+        <Modal.Body>
+          <p>Description: {this.props.selectedBeast.description}</p>
+          <p>Horns: {this.props.selectedBeast.horns}</p>
+        </Modal.Body>
         <Modal.Footer>
-          <p>{this.props.selectedBeast.description}</p>
           <Button onClick={this.props.handleCloseModal}>Close</Button>
         </Modal.Footer>
       </Modal>

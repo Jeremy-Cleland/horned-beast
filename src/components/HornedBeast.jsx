@@ -20,7 +20,8 @@ class HornedBeast extends React.Component {
     this.props.handleOpenModal(
       this.props.title,
       this.props.image,
-      this.props.description
+      this.props.description,
+      this.props.horns
     );
   };
 

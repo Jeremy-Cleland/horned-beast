@@ -15,13 +15,14 @@ class App extends React.Component {
     };
   }
 
-  handleOpenModal = (title, image, description) => {
+  handleOpenModal = (title, image, description, horns) => {
     this.setState({
       showModal: true,
       selectedBeast: {
         title: title,
         image: image,
         description: description,
+        horns: horns,
       },
     });
   };
