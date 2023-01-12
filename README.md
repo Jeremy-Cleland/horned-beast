@@ -59,3 +59,13 @@ Description: This Application displays images and information of horned animals.
 **Finish time:** 7:25
 
 **Actual time needed to complete:** Around an hour, but I had taken breaks to dig into depth and take notes. I have been buidling a comprehensive notebook for React
+
+### Feature 5 | Filter by the Number of Horns
+
+**Estimate of time needed to complete:** 2 hours
+
+**Start time:** 4:00
+
+**Finish time:** 6:55
+
+**Actual time needed to complete:** 2 1/2 hours.
